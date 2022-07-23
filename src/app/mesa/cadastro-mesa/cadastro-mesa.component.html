@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Cadastrar nova mesa</h1>
+<div mat-dialog-content>
+  <form [formGroup]="mesaDeSom">
+    <mat-form-field appearance="outline">
+      <mat-label>Nome</mat-label>
+      <input matInput placeholder="" formControlName="nome">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Quantidade de canais</mat-label>
+      <input matInput type="number" placeholder="" formControlName="qtdCanais">
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="cancelar()">Cancelar</button>
+  <button mat-button (click)="salvar()">Salvar</button>
+</div>
